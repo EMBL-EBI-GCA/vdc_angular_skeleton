@@ -2,12 +2,11 @@ import { NgModule, ModuleWithProviders, Optional, SkipSelf }      from '@angular
 import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
-
 import { HomeComponent } from './components/home.component';
 
 @NgModule({
   imports: [ SharedModule, CommonModule ],
-  declarations: [ HomeComponent ],
+  declarations: [ HomeComponent ]
 })
 export class CoreModule { 
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
