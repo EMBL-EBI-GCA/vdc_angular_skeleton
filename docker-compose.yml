@@ -6,12 +6,12 @@ services:
     entrypoint: npm
     command: install --unsafe-perm
     volumes:
-      - ./project:/usr/src/app
+      - .:/usr/src/app
     working_dir: /usr/src/app
   serve:
     image: nginx
     volumes:
-      - ./project/webroot:/usr/share/nginx/html:ro
+      - ./webroot:/usr/share/nginx/html:ro
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
     ports:
       - "8000:80"
