@@ -3,9 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './components/home.component';
+import { DoSomethingService } from './services/do-something.service';
 
 @NgModule({
   imports: [ SharedModule, CommonModule ],
+  providers: [ DoSomethingService ],
   declarations: [ HomeComponent ]
 })
 export class CoreModule { 
