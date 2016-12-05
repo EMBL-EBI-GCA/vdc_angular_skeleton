@@ -1,0 +1,7 @@
+project/app/**/*.js
+project/app/**/*.js.map
+
+project/aot/
+project/node_modules/
+project/typings/
+project/webroot/static/build.js
