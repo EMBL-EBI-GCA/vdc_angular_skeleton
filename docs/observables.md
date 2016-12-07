@@ -100,4 +100,4 @@ Here are a few examples from the EBiSC data tracker that follow this development
 
 * [question-detail.component](https://github.com/EMBL-EBI-GCA/ebisc_tracker_2/blob/master/webcontent/app/questions/question-detail.component.ts)
 * [cell-line-list.component](https://github.com/EMBL-EBI-GCA/ebisc_tracker_2/blob/master/webcontent/app/cell-lines/cell-line-list.component.ts)
-* Almost any other component you can see in the [data tracker](dat://github.com/EMBL-EBI-GCA/ebisc_tracker_2/tree/master/webcontent/app).
+* Almost any other component you can see in the [data tracker](https://github.com/EMBL-EBI-GCA/ebisc_tracker_2/tree/master/webcontent/app).
