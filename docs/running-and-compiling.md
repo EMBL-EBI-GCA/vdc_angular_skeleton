@@ -3,15 +3,15 @@ Compiling the app
 
 If you have npm installed on your computer, run this from the top directory of this repo:
 
-  npm install --unsafe-perm
+    npm install --unsafe-perm
 
 If you don't have npm but you do have docker:
 
-  docker run -v $PWD:/usr/src/app --workdir /usr/src/app node:slim npm install --unsafe-perm
+    docker run -v $PWD:/usr/src/app --workdir /usr/src/app node:slim npm install --unsafe-perm
 
 Or if you have docker-compose:
 
-  docker-compose run npm
+    docker-compose run npm
 
 For some reason the compliation runs much slower in docker. This is a problem related to [Docker for mac](https://docs.docker.com/docker-for-mac/). You might be happier if you install npm on your local machine.
 
@@ -29,10 +29,10 @@ Viewing the app
 
 There are lots of ways to serve static files from a webserver on your local machine. This example runs nginx in a docker container. Run it from  the top directory of this repo.
 
-  docker run -v webroot:/usr/share/nginx/html:ro -v nginx.conf:/etc/nginx/conf.d/default.conf:ro -p 8000:80 -d nginx
+    docker run -v webroot:/usr/share/nginx/html:ro -v nginx.conf:/etc/nginx/conf.d/default.conf:ro -p 8000:80 -d nginx
 
 Or if you have docker-compose:
 
-  docker-compose up -d nginx
+    docker-compose up -d nginx
 
 Then open [http://localhost:8000](http://localhost:8000) in your browser.
