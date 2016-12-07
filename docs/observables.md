@@ -88,11 +88,11 @@ ii. Pass the observable of experiments to the next() function of experiment subj
 
 ##6. Cancel the subscription when you no longer need it
 
-  ngOnDestroy() {
-    if (this.experimentSubscription) {
-      this.experimentSubscription.unsubscribe();
+    ngOnDestroy() {
+      if (this.experimentSubscription) {
+        this.experimentSubscription.unsubscribe();
+      }
     }
-  }
 
 #Examples
 
