@@ -1,7 +1,0 @@
-app/**/*.js
-app/**/*.js.map
-
-aot/
-node_modules/
-typings/
-webroot/static/build.js
