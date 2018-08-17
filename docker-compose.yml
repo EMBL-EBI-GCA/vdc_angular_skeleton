@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  angular:
+    image: teracy/angular-cli
+    entrypoint: ng
+    command: build --prod --build-optimizer
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+  nginx:
+    image: nginx
+    volumes:
+      - ./dist/test-angular6:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+      - "8000:80"
+
