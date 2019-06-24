@@ -29,12 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## App content
 
 ### App has two main components:
-1. [home](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/src/app/home/home.component.ts) - basic component, can be used as skeleton for other components
-2. [non-existing](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/src/app/non-existing/non-existing.component.ts) - end-point for 404 page
+1. [home](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/blob/master/src/app/home/home.component.ts) - basic component, can be used as skeleton for other components
+2. [non-existing](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/blob/master/src/app/non-existing/non-existing.component.ts) - end-point for 404 page
 
 ### And two main folders:
-1. [pipes](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/src/app/pipes/) - contains [sort](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/src/app/pipes/sort.pipe.ts) and [filter]((https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/src/app/pipes/filter.pipe.ts)) pipes for tables in components
-2. [shared](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/src/app/shared/) - contains [export](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/src/app/shared/export/export.component.ts) component (could be used to add data export to another component), [header](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/src/app/shared/header/header.component.ts) component (provides navbar for all components) and [interfaces](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/src/app/shared/interfaces.ts) (file for shared interfaces across app)
+1. [pipes](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/tree/master/src/app/pipes) - contains [sort](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/blob/master/src/app/pipes/sort.pipe.ts) and [filter](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/blob/master/src/app/pipes/filter.pipe.ts) pipes for tables in components
+2. [shared](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/tree/master/src/app/shared) - contains [export](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/blob/master/src/app/shared/export/export.component.ts) component (could be used to add data export to another component), [header](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/blob/master/src/app/shared/header/header.component.ts) component (provides navbar for all components) and [interfaces](https://github.com/EMBL-EBI-GCA/vdc_angular_skeleton/blob/master/src/app/shared/interfaces.ts) (file for shared interfaces across app)
 
 ### Pre-installed packages:
 1. [ngx-spinner](https://www.npmjs.com/package/ngx-spinner). Provides spinner interface for process that requires longer time
