@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
   title = 'vdc-angular-skeleton';
   cookieLawSeen: boolean;
 
-  @ViewChild('cookieLaw')
+  @ViewChild('cookieLaw', { static: true })
   cookieLawEl: any;
 
   ngOnInit() {
