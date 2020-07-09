@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tree-of-life-portal';
+  title = 'angular-skeleton';
+  @ViewChild('cookieLaw')
+  cookieLawEl: any;
+
+  ngOnInit() {
+  }
+
+  dismiss(): void {
+    this.cookieLawEl.dismiss();
+  }
 }

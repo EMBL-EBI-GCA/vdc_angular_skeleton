@@ -1,9 +1,11 @@
-import {Component, ViewChild,OnInit} from '@angular/core';
-import { MatSort} from '@angular/material/sort';
-import { Sample, samples} from '../model/dashboard.model';
+import { Component, ViewChild, OnInit } from '@angular/core';
+import { MatSort } from '@angular/material/sort';
+import { Sample, samples } from '../model/dashboard.model';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { FormGroup, FormControl } from '@angular/forms';
+
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-dashboard',
@@ -16,9 +18,12 @@ export class DashboardComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort, {}) sort: MatSort;
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    // set title
+    this.titleService.setTitle('Dashboard');
+  }
 
   /**
    * Set the sort after the view init since this component will
@@ -29,7 +34,7 @@ export class DashboardComponent implements OnInit {
     this.dataSource.sort = this.sort;
   }
 
-  filterProduct(value: string):void{
+  filterProduct(value: string): void {
     this.dataSource.filter = value.trim().toLowerCase();
   }
 
